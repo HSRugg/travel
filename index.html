@@ -19,15 +19,15 @@
             }
             #mainheading{
                 font-family: sans-serif;
-                padding-top: 5%;
-                font-size: 6em;
+                padding-top: .5%;
+                font-size: 7vh;
                 color: aliceblue;
                 opacity: .7;
             }
             #subheading{
                 font-family: sans-serif;
                 padding-top: 0%;
-                font-size: 3em;
+                font-size: 4vh;
                 color: aliceblue;
                 opacity: .7;
             }
@@ -40,7 +40,8 @@
             #maindiv {
                 background-image: url("Monteverde_Costa_Rica1.jpg");
                 width: 100vw;
-                height: 800px;
+                height: 100vw;
+                max-height: 100vh;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
@@ -48,26 +49,35 @@
                 width: 100vw;
                 height: 200px;
             }
-            .activity_lable {
+            .day_label {
                 position: relative;
                 float: left;
-                padding-left: 15%;
+                font-size: .5em;
+                
                 margin-top: 0;
                 line-height: 200px;
                 background-image: url("Monteverde_Costa_Rica1.jpg");
-                width: 30vw;
+                width: 40vw;
                 height: 200px;
                 background-repeat: no-repeat;
                 background-size: cover;
+                border-radius: 20px;
             }
-            .activity_descrition{
+            .activity_descrition_box{
                 position: relative;
                 float: right;
-                width: 50vw;
-                margin: auto;
+                width: 55vw;
+                margin: 2%;
                 font-size: .4em;
                 padding-top: 0px;
-                line-height: 1px;
+            }
+            .activity_label{
+                margin-top: 0px;
+                margin-bottom: 0;
+            }
+            .activity_descrition{
+                margin-top: 0;
+                margin-bottom: 0;
             }
             #acomidations_description{
                 padding-left: 15%;
@@ -82,6 +92,13 @@
                 color: aliceblue;
                 opacity: .7;
 /*                visibility: hidden;*/
+            }
+            #pricing_table{
+                font-size: .45em;
+                margin: auto;
+            }
+            .row_1{
+                width: 68%;
             }
 
         </style>
@@ -116,38 +133,38 @@
         <div id="mainheading">
             <center style="padding-bottom:60px"> Activities </center>
             <div class ="activity_box"> 
-                <div class ="activity_lable">Day 1-4
+                <div class ="day_label"><center>Day 1-4</center>  
                 </div>
-                <div class = "activity_descrition">
-                    <center><h6>Event Title</h6></center>
-                    <p> This is a discption of the events on this day.</p>
-                </div>
-            </div>
-            
-            <div class ="activity_box"> 
-                <div class ="activity_lable">Day 5
-                </div>
-                <div class = "activity_descrition">
-                    <center><h6>Event Title</h6></center>
-                    <p> This is a discption of the events on this day.</p>
+                <div class = "activity_descrition_box">
+                    <center><h6 class="activity_label">Event Title</h6></center>
+                    <p class="activity_descrition"> This is a discption of the events on this day.</p>
                 </div>
             </div>
             
             <div class ="activity_box"> 
-                <div class ="activity_lable">Day 6
+                <div class ="day_label"><center>Day 5</center>
                 </div>
-                <div class = "activity_descrition">
-                    <center><h6>Event Title</h6></center>
-                    <p> This is a discption of the events on this day.</p>
+                <div class = "activity_descrition_box">
+                    <center><h6 class="activity_label">Event Title</h6></center>
+                    <p class="activity_descrition"> This is a discption of the events on this day.</p>
                 </div>
             </div>
             
             <div class ="activity_box"> 
-                <div class ="activity_lable">Day 7
+                <div class ="day_label"><center>Day 6</center>
                 </div>
-                <div class = "activity_descrition">
-                    <center><h6>Event Title</h6></center>
-                    <p> This is a discption of the events on this day.</p>
+                <div class = "activity_descrition_box">
+                    <center><h6 class="activity_label">Event Title</h6></center>
+                    <p class="activity_descrition"> This is a discption of the events on this day.</p>
+                </div>
+            </div>
+            
+            <div class ="activity_box"> 
+                <div class ="day_label"><center>Day 7</center>
+                </div>
+                <div class = "activity_descrition_box">
+                    <center><h6 class="activity_label">Event Title</h6></center>
+                    <p class="activity_descrition"> This is a discption of the events on this day.</p>
                 </div>
             </div>
 
@@ -186,14 +203,24 @@
         <div id="mainheading">
             <center style="padding-bottom:60px"> Pricing </center>
             <p id = "acomidations_description">
-                All Inclusive Early Birt Special .....................  $1800.00 USD
-                <br>
-                All Inclusive Noramal Rate ............................  $2200.00 USD
-                <br>
-                All Inclusive Single Room ..............................  $2400.00 USD
-                
-                <br>
-                <br>
+                <table id="pricing_table">
+
+                  <tr>
+                    <td class="row_1">All Inclusive Early Birt Special</td>
+                    <td>$1800.00 USD </td>
+                  </tr>
+
+                  <tr>
+                    <td class="row_1">All Inclusive Noramal Rate</td>
+                    <td>$2200.00 USD</td>
+                  </tr>
+
+                   <tr>
+                    <td class="row_1">All Inclusive Single Room</td>
+                    <td>$2400.00 USD</td>
+                  </tr>
+
+                </table>
                 
                 ********** CLICK HERE TO BOOK A RESEVATION **********
                 
