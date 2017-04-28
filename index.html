@@ -17,9 +17,16 @@
                 margin-left: 40%;
                 font-size: 40px;
             }
-            #mainheading{
+            #intro_heading{
                 font-family: sans-serif;
                 padding-top: .5%;
+                font-size: 7vh;
+                color: aliceblue;
+                opacity: .7;
+            }
+            #mainheading{
+                font-family: sans-serif;
+                padding-top: 3%;
                 font-size: 7vh;
                 color: aliceblue;
                 opacity: .7;
@@ -115,6 +122,12 @@
             .row_1{
                 width: 68%;
             }
+            .img_carousel{
+                margin: auto;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding: auto;
+            }
 
         </style>
         
@@ -134,7 +147,7 @@
             
         <br>
         <center>
-        <h1 id="mainheading">Life Starts Here</h1>
+        <h1 id="intro_heading">Life Starts Here</h1>
         <a href="#activitys"><h3 id="subheading">Activities          </h3></a>
         <a href="#acomidations"><h3 id="subheading">Accommodation    </h3></a>
         <a href="#amanityies"><h3 id="subheading">Amenities        </h3></a>
@@ -146,10 +159,10 @@
         
         
 <!--        Image Carousel-->
-        <div class="w3-content w3-section" style="max-width:500px">
-          <img class="mySlides" src="dubes_tubes.jpg" style="width:90%">
-          <img class="mySlides" src="Ruines.jpg" style="width:90%">
-          <img class="mySlides" src="under_tree.jpg" style="width:90%">
+        <div class="img_carousel" style="max-width:500px">
+          <img class="mySlides" src="dubes_tubes.jpg" style="width:100%">
+          <img class="mySlides" src="Ruines.jpg" style="width:100%">
+          <img class="mySlides" src="under_tree.jpg" style="width:100%">
         </div>
 
     <script>
@@ -165,7 +178,7 @@
             myIndex++;
             if (myIndex > x.length) {myIndex = 1}    
             x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 2000); // Change image every 2 seconds
+            setTimeout(carousel, 3000); // Change image every 3 seconds
         }
     </script>
 
@@ -173,7 +186,7 @@
         <a name="activitys"></a>
         
         <div id="mainheading">
-            <center style="padding-bottom:60px"> Activities </center>
+            <center style="padding-bottom:30px"> Activities </center>
             <div class ="activity_box"> 
                 <div class ="day_label" id="day_1_img"><center>Day 1-4</center>  
                 </div>
@@ -230,7 +243,7 @@
         <a name="amanityies"></a>
         
         <div id="mainheading">
-            <center style="padding-bottom:60px"> Amenities </center> 
+            <center style="padding-bottom:30px"> Amenities </center> 
             <p id = "acomidations_description">
             We will provied 80% of the meals for the post concert part of the trip.
             Transportation to and from the airport in Costa Rica and all activity.
@@ -243,7 +256,7 @@
         <a name="prices"></a>
         
         <div id="mainheading">
-            <center style="padding-bottom:60px"> Pricing </center>
+            <center style="padding-bottom:30px"> Pricing </center>
             <p id = "acomidations_description">
                 <table id="pricing_table">
 
