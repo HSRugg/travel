@@ -10,8 +10,20 @@
         
         
         <style>  
-            body{margin: 0;
+            body{
+                margin: 0;
                 padding: 0;
+            }
+            #background_img{
+                position: fixed;
+                
+                background-image: url("Monteverde_Costa_Rica1.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100vw;
+                height: 100%;
+                ;
+                
             }
             #text{
                 margin-left: 40%;
@@ -45,18 +57,16 @@
                 text-decoration:none;   
             }
             #maindiv {
-                background-image: url("Monteverde_Costa_Rica1.jpg");
                 width: 100vw;
                 height: 100vw;
                 max-height: 100vh;
-                background-repeat: no-repeat;
-                background-size: cover;
             }
             .activity_box{
                 width: 100vw;
                 height: 200px;
             }
             .day_label {
+                
                 position: relative;
                 float: left;
                 font-size: .5em;
@@ -70,15 +80,19 @@
                 border-radius: 20px;
             }
             #day_1_img{
+                opacity: 1;
                 background-image: url("feslval.jpg");
             }
             #day_5_img{
+                opacity: 1;
                 background-image: url("park.jpg");
             }
             #day_6_img{
+                opacity: 1;
                 background-image: url("zipline.jpeg");
             }
             #day_7_img{
+                opacity: 1;
                 background-image: url("rafting.jpg");
             }
             .activity_descrition_box{
@@ -150,6 +164,7 @@
                 width: 100vw;
                 min-height: 100vh;
                 background-color: #288128;
+                margin-bottom: -18px;
                 
             }
             
@@ -168,7 +183,7 @@
         <a name="top"></a>
         <a id="top_btn" href="./index.html" >Top</a>
         
-        
+        <div id=background_img></div>
         <div id="maindiv">
             
         <br>
@@ -185,7 +200,8 @@
         
         
 <!--        Image Carousel-->
-        <div class="img_carousel" style="max-width:500px">
+<!--
+        <div class="img_carousel" style="max-height:500px">
           <img class="mySlides" src="dubes_tubes.jpg" style="width:100%">
           <img class="mySlides" src="Ruines.jpg" style="width:100%">
           <img class="mySlides" src="under_tree.jpg" style="width:100%">
@@ -207,6 +223,7 @@
             setTimeout(carousel, 3000); // Change image every 3 seconds
         }
     </script>
+-->
 
         
         <a name="activitys"></a>
