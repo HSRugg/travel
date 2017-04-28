@@ -10,8 +10,8 @@
         
         
         <style>  
-            body{
-                background-color: rgba(42, 101, 39, 0.9);
+            body{margin: 0;
+                padding: 0;
             }
             #text{
                 margin-left: 40%;
@@ -24,9 +24,9 @@
                 color: aliceblue;
                 opacity: .7;
             }
-            #mainheading{
+            .mainheading{
                 font-family: sans-serif;
-                padding-top: 3%;
+                padding-top: 8%;
                 font-size: 7vh;
                 color: aliceblue;
                 opacity: .7;
@@ -128,6 +128,32 @@
                 margin-bottom: 0;
                 padding: auto;
             }
+            #activitys_div{
+                width: 100vw;
+                min-height: 100vh;
+                background-color: #288128;
+            }
+            #acomidations_div{
+                width: 100vw;
+                min-height: 100vh;
+                background-color: green;
+                margin-bottom: -18px;
+            
+            }
+            #amenities_div{
+                width: 100vw;
+                min-height: 100vh;
+                background-color: #17a517;
+                margin-bottom: -18px;
+            }
+            #pricing_div{
+                width: 100vw;
+                min-height: 100vh;
+                background-color: #288128;
+                
+            }
+            
+            
 
         </style>
         
@@ -185,7 +211,7 @@
         
         <a name="activitys"></a>
         
-        <div id="mainheading">
+        <div class="mainheading" id="activitys_div">
             <center style="padding-bottom:30px"> Activities </center>
             <div class ="activity_box"> 
                 <div class ="day_label" id="day_1_img"><center>Day 1-4</center>  
@@ -228,8 +254,8 @@
         
         <a name="acomidations"></a>
 
-        <div id="mainheading">
-            <center style="padding-bottom:60px"> Accommodation </center>
+        <div class="mainheading" id="acomidations_div">
+            <center style="padding-bottom:30px"> Accommodation </center>
         
             <p id = "acomidations_description">
             Pricing is based on shared room. After the concert we will stay four diffrent hand picked locations.
@@ -242,7 +268,7 @@
         
         <a name="amanityies"></a>
         
-        <div id="mainheading">
+        <div class="mainheading" id="amenities_div">
             <center style="padding-bottom:30px"> Amenities </center> 
             <p id = "acomidations_description">
             We will provied 80% of the meals for the post concert part of the trip.
@@ -255,7 +281,7 @@
         
         <a name="prices"></a>
         
-        <div id="mainheading">
+        <div class="mainheading" id="pricing_div">
             <center style="padding-bottom:30px"> Pricing </center>
             <p id = "acomidations_description">
                 <table id="pricing_table">
@@ -276,8 +302,9 @@
                   </tr>
 
                 </table>
-                
-                ********** CLICK HERE TO BOOK A RESEVATION **********
+                <hr>
+                 <center>CLICK HERE TO BOOK A RESEVATION </center>
+                <hr>
                 
            
             
