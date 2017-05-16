@@ -1,0 +1,209 @@
+<html>
+<head>
+    <style>
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+    background-color: #004b00;
+  margin:0;
+  padding:0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: fantasy;
+}
+
+h1 {
+   font-size: 250%
+}
+
+p, tr {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+    transform-style: inherit;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 85vh;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+        
+        
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+border: none;
+  background: 50% 50% / cover;  
+}
+
+.header, tr {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+tr {
+    margin: auto;
+    text-align: left;
+    width: 40%;
+}
+.row1 {
+    padding-right: 30px;
+}
+
+#title {
+  background-image: url("./Monteverde_Costa_Rica1.jpg");
+   background-attachment: fixed;  
+}
+
+#slide1:before {
+  background-image: url("./dubes_tubes.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+        
+#slide1{
+    margin-top: 50%;
+
+}
+
+#slide2:before {
+  background-image: url("./park.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+        
+#slide2 {
+  background-attachment: fixed;
+    margin-top: 50%;
+}
+
+#slide3:before {
+  background-image: url("./feslval.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide4 {
+  background: #222;
+}
+    </style>
+</head>
+<body>
+    
+</body>
+
+</html>
+
+<div id="title" class="slide header">
+  <h1>Post Festival Travle</h1>
+</div>
+
+<div id="slide1" class="slide">
+  <div class="title">
+    <h1>Don't Let the Fun Stop</h1>
+    <p>Why not see the more of what buetiful Costa Rica has to ooffer. We are rounding up a great group of exporest to see this facinating countery and keep the spirt of Evinsvion alive</p>
+  </div>
+</div>
+
+<div id="slide2" class="slide">
+  <div class="title">
+    <h1>Day 3-5</h1>
+    <p>Some Stuff We doooooo</p>
+  </div>
+  <img src="http://lorempixel.com/640/480/abstract/6/">
+  <img src="http://lorempixel.com/640/480/abstract/4/"> 
+</div>
+
+<div id="slide3" class="slide">
+  <div class="title">
+    <h1>Slide 3</h1>
+    <p>Some Stuff We doooooo</p>
+  </div>
+</div>
+
+<div id="slide4" class="slide header">
+     <a name="prices"></a>
+        
+        <div class="mainheading" id="pricing_div">
+            <center style="padding-bottom:30px"> Pricing </center>
+            <hr class=under_line>
+            <p id = "acomidations_description">
+                <center>
+                <table id="pricing_table">
+
+                  <tr>
+                    <td class="row1">All Inclusive Early Birt Special</td>
+                    <td>$1800.00 USD </td>
+                  </tr>
+
+                  <tr>
+                    <td class="row1">All Inclusive Noramal Rate</td>
+                    <td>$2200.00 USD</td>
+                  </tr>
+
+                   <tr>
+                    <td class="row1">All Inclusive Single Room</td>
+                    <td>$2400.00 USD</td>
+                  </tr>
+
+                </table>
+                </center>
+            <div id="buy_btn">
+                <hr>
+                 <center>CLICK HERE TO BOOK A RESEVATION </center>
+                <hr>
+</div>
